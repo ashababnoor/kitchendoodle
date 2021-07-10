@@ -1,0 +1,159 @@
+:root {
+    --cat-cell-bg-clr: #ddd;
+    --prm-border-clr: white;
+}
+
+.main-container {
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+#result {
+    margin-top: 1em;
+    margin-bottom: 0em;
+}
+
+.content>div {
+    margin-bottom: 0em;
+}
+
+.content>div>* {
+    margin-bottom: 1.5em;
+}
+
+.form-check {
+    margin-bottom: 0.5em;
+}
+
+.calorie-table {
+    max-width: 600px;
+}
+
+.rows {
+    display: flex;
+    flex-direction: column;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+}
+
+.columns > * {
+    width: 100%;
+}
+
+.table-head {
+    border: 2px solid var(--prm-border-clr);
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    background-color: #444;
+    color: #eee;
+    text-align: center;
+    padding: 0.8em;
+    margin: 0.04rem;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+.value-cell {
+    border: 2px solid var(--prm-border-clr);
+    background-color: #d4edda;
+    padding: 0.8em;
+    margin: 0.04rem;
+    text-align: center;
+}
+
+.category-cell {
+    border: 2px solid var(--prm-border-clr);
+    background-color: var(--cat-cell-bg-clr);
+    position: relative;
+    padding: 0.8em;
+    margin: 0.04rem;
+    text-align: center;
+}
+
+.arrow {
+    --size: 1.5em;
+    position: absolute;
+    border: 0.2em solid transparent;
+    border-right-color: var(--prm-border-clr);
+    border-top-color: var(--prm-border-clr);
+    background: var(--cat-cell-bg-clr);
+    height: var(--size);
+    width: var(--size);
+    right: calc(var(--size) * -0.51);
+    top: 50%;
+    margin-top: calc(var(--size) * -0.5);
+    transform: rotate(45deg);
+}
+
+.text {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.val {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+small {
+    font-size: 0.9rem;
+}
+
+.subtext {
+    font-size: 1em;
+    color: #666;
+}
+
+.btn-div {
+    padding: 0.7em 0em;
+    margin: 0rem;
+}
+
+#gain-btn {
+    width: 100%;
+}
+
+#weight-gain-div {
+    display: none;
+}
+
+#info-div {
+    padding: 1em 0em;
+}
+
+#hidden-calorie-section {
+    display: none;
+}
+
+.val {
+    cursor: pointer;
+}
+
+.bubble {
+    --clr-bs-danger: #d9534f;
+    --clr-bs-success: #5cb85c;
+
+    background: var(--clr-bs-success);
+    color: white;
+    font-size: 0.8em;
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.4rem;
+}
+
+.range-wrap{
+    position: relative;
+    margin: 0 auto 2rem;
+}
+
+.range {
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.form-header{
+    font-weight: 600;
+    font-size: 1.1rem;
+}

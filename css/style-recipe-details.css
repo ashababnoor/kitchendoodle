@@ -1,0 +1,100 @@
+.content {
+    padding: 2em;
+}
+
+.column-container {
+    max-width: 70em;
+    margin: auto;
+}
+
+.column-container>* {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.row:not(:last-of-type) {
+    margin-bottom: 3em;
+}
+
+h4 {
+    color: #333;
+}
+
+h5 {
+    padding-bottom: 0.75em;
+}
+
+h6 {
+    padding-bottom: 1em;
+    color: #555;
+}
+
+.col-lg-6 {
+    padding: 0em 2em;
+}
+
+#action-row {
+    padding-top: 0em;
+}
+
+#action-row>* {
+    margin: 0em 0.25em;
+}
+
+#action-row>*:first-child {
+    margin-left: 0em;
+}
+
+#action-row>*:last-child {
+    margin-right: 0em;
+}
+
+#content-row {
+    margin-top: 2em;
+}
+
+.recipe-description {
+    padding: 0em 1em;
+    text-align: justify;
+}
+
+.ingredient-list-item {
+    margin-left: 0em;
+    margin-bottom: 0.75em;
+}
+
+#stats * {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 0.8rem;
+}
+
+#stats>*>*:last-child {
+    font-size: 1.2rem;
+    padding: 0.2rem;
+    color: black;
+    margin-bottom: 0em;
+}
+
+#stat-gram {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: black;
+}
+
+.chart-div {
+    position: relative;
+    max-width: 18em;
+    margin: auto;
+}
+
+.ingredient-list-item a {
+    color: black;
+    text-decoration: none;
+}
+
+.ingredient-list-item a:hover {
+    color: #009245;
+}

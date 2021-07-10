@@ -1,0 +1,32 @@
+.main-container {
+    padding: 2.5em 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+ul a,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-deck-custom {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-deck-custom>* {
+    flex-basis: calc((800px - 100%) * 999);
+    flex-grow: 1;
+    margin-left: 0.75em;
+    margin-right: 0.75em;
+    margin-top: 1.5em;
+}
+
+.logout {
+    color: red;
+}
+
+.logout:hover {
+    color: #ff0000;
+}

@@ -1,0 +1,9 @@
+.login-container{
+    max-width: 700px;
+}
+
+.full-logo {
+    width: 40vw;
+    min-width: 300px;
+    max-width: 400px;
+}

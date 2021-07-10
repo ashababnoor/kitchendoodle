@@ -1,0 +1,21 @@
+.content {
+    padding: 2em;
+}
+
+.column-container {
+    max-width: 60em;
+    margin: auto;
+}
+
+.card:hover {
+    box-shadow: 0em 0em 0.7em #ccc;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}

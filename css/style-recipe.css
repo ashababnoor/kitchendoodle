@@ -1,0 +1,148 @@
+/* For inspection purposes */
+
+
+/* div {
+    border: 1px solid #000;
+} */
+
+:root {
+    --clr-primary-900: #009245;
+    --clr-primary-600: #AFD7A9;
+    --clr-bs-success: #5cb85c;
+}
+
+body {
+    margin: 0;
+}
+
+.navbar {
+    min-width: 100%;
+    margin: 0;
+}
+
+
+/* Search Box Start */
+
+.full-logo {
+    width: 40vw;
+    min-width: 300px;
+    max-width: 500px;
+}
+
+.search-box-container {
+    height: 70vh;
+    display: grid;
+    place-items: center;
+}
+
+#searchbar-div {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-icon {
+    position: absolute;
+    left: 0.2em;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 620px) {
+    #search-icon {
+        position: absolute;
+        left: 0.2rem;
+        opacity: 0.5;
+    }
+}
+
+#dataSearchBar {
+    border: 1px solid #aaa;
+    font-size: 1rem;
+    /* padding: 0.7em; */
+    outline: none;
+    width: 50vw;
+    min-width: 300px;
+    max-width: 550px;
+    border-radius: 1.2em;
+    -webkit-border-radius: 1.2em;
+    -moz-border-radius: 1.2em;
+    overflow: hidden;
+}
+
+#dataSearchBar:hover {
+    box-shadow: 0px 0px 10px 1px #eee;
+}
+
+#recipeSearchButton,
+#recipeAllButton {
+    border: none;
+    font-size: 0.95em;
+    padding: 0.5em;
+    margin: 0em 0.25em;
+    background: var(--clr-primary-900);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    width: 15vw;
+    min-width: 100px;
+    max-width: 130px;
+    border-radius: 1.1em;
+    -webkit-border-radius: 1.1em;
+    -moz-border-radius: 1.1em;
+}
+
+#recipeSearchButton:hover,
+#recipeAllButton:hover {
+    box-shadow: 0px 0px 5px 1px #ddd;
+}
+
+#recipeSearchButton:focus,
+#recipeAllButton:focus {
+    box-shadow: 0 0 0 5px var(--clr-primary-600);
+}
+
+
+/* Search Box End */
+
+
+/* Updated Code --> Check for conflict */
+
+.icon-div {
+    position: relative;
+    padding: 0.5em;
+    margin: 0em 0.7em;
+}
+
+#inputBox,
+#inputBox:focus {
+    border: none;
+    width: 100%;
+    outline: none;
+    padding-left: 1.3rem;
+}
+
+.search-item {
+    list-style: none;
+    padding: 0.3em 0.7em;
+}
+
+.search-item:last-of-type {
+    padding-bottom: 0.5em;
+}
+
+.search-item:hover {
+    background: #ccc;
+}
+
+.search-item a,
+.search-item a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.search-item a:hover {
+    color: #009245;
+}

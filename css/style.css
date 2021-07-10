@@ -1,0 +1,293 @@
+:root {
+    font-size: 18px;
+
+    /* Colors */
+    --clr-primary-900: #009245;
+    --clr-primary-600: #AFD7A9;
+    --clr-bs-primary: #0275d8;
+    --clr-bs-success: #5cb85c;
+    --clr-bs-info: #5bc0de;
+    --clr-bs-warning: #f0ad4e;
+    --clr-bs-danger: #d9534f;
+    --clr-bs-dark: #292b2c;
+    --clr-bs-light: #f7f7f7;
+
+    /* Pop variations */
+    --clr-bs-primary-pop: #007bff;
+    --clr-bs-success-pop: #28a745;
+    --clr-bs-info-pop: #17a2b8;
+    --clr-bs-warning-pop: #ffc107;
+    --clr-bs-danger-pop: #dc3545;
+    --clr-bs-dark-pop: #343a40;
+    --clr-bs-light-pop: #f8f9fa;
+
+    /* Light variations */
+    --clr-bs-success-light: #c3e6cb;
+    --clr-bs-info-light: #d1ecf1;
+    --clr-bs-warning-light: #fff3cd;
+    --clr-bs-danger-light: #f8d7da;
+    
+    /* Deep variations */
+    --clr-bs-success-deep: #155724;
+    --clr-bs-info-deep: #0c5460;
+    --clr-bs-warning-deep: #856404;
+    --clr-bs-danger-deep: #721c24;
+
+    /* Dark Nav Background */
+    --clr-bs-nav-dark: #353b41;
+
+    /* Fonts */
+    --font-roboto-slab: "Roboto Slab", serif;
+    --font-roboto: "Roboto", sans-serif;
+}
+
+:root *:focus {
+    outline-color: var(--clr-primary-900);
+    outline-offset: 0.3rem;
+}
+
+
+/* :root * {
+    border: 1px solid red;
+} */
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-fluid {
+    --padding: 1em;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+}
+
+
+/* Navbar Start */
+
+nav {
+    min-width: inherit;
+}
+
+#nav-text {
+    font-family: var(--font-roboto-slab);
+    font-weight: 900;
+    font-size: 1.6em;
+    color: var(--clr-primary-900);
+}
+
+.navbar-brand {
+    padding-bottom: 0.4em;
+}
+
+.navbar-brand-image {
+    height: 1em;
+}
+
+.navbar li {
+    padding-left: 0.8em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+.dropdown-toggle::after {
+    content: none;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus {
+    border: none;
+}
+
+
+/* Navbar End */
+
+.content {
+    flex: 1 0 auto;
+}
+
+
+/* Footer Start */
+
+.custom-footer {
+    font-size: 0.8em;
+    padding: 1.5em;
+    width: 100%;
+    margin-top: auto;
+    flex-shrink: 0;
+}
+
+.custom-footer div {
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+}
+
+.footer-logo {
+    height: 1em;
+}
+
+footer>div>div>a:focus {
+    box-shadow: 0 0 0 10x gray, 0 0 0 5px white;
+    
+}
+
+
+/* Footer End */
+
+
+/* Extras */
+
+.pancake-stacked-container {
+    padding: 2.5em 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.muted-link {
+    text-decoration: none;
+    color: #777;
+    font-weight: 400;
+}
+
+.muted-link:hover,
+.muted-link:focus {
+    text-decoration: none;
+    color: #009245;
+}
+
+h4 {
+    font-weight: bold;
+    /* color: #777; */
+    color: var(--clr-bs-nav-dark);
+}
+
+#hidden-section {
+    display: none;
+}
+
+
+/* Psuedo element line for home page */
+
+.greetings {
+    font-family: var(--font-roboto);
+}
+
+.line {
+    position: relative;
+    width: max-content;
+}
+
+.line::after {
+    content: '';
+    position: absolute;
+    height: 0.2em;
+    background: var(--clr-primary-900);
+    left: calc(var(--padding) * -1);
+    bottom: -1;
+    width: calc(100% + var(--padding));
+}
+
+
+/* For tables with action buttons */
+
+
+/* 
+    I know this looks weird but this is
+    a hack I came up with because modern css 
+    doesn't support table column width attribute.
+    Only table data width can be set which has
+    limited usability. 
+*/
+
+.action-tabledata {
+    width: 1px;
+}
+
+.action-tabledata:not(:last-of-type) {
+    padding-right: 0.5em;
+}
+
+.action-tabledata:last-of-type {
+    padding-left: 0em;
+}
+
+.btn-fit {
+    padding: 0.35em 0.5em;
+    width: 100%;
+}
+
+.btn-fit:not(:last-child) {
+    padding: 0.35em 0.5em;
+    margin-bottom: 0.5em;
+    width: 100%;
+}
+
+.sub-table {
+    border: none;
+}
+
+.sub-table tr,
+.sub-table td {
+    border: none;
+    padding: 0.1em 0.2em;
+    margin-bottom: 0em;
+}
+
+
+/* ========================================= */
+
+
+/* Custom Colors */
+
+.transparent-red {
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
+.transparent-blue {
+    background-color: rgba(0, 0, 255, 0.3);
+}
+
+.transparent-orange-1 {
+    background-color: rgba(255, 69, 0, 0.3);
+}
+
+.transparent-orange-2 {
+    background-color: rgba(255, 140, 0, 0.3);
+}
+
+
+/* Bootstrap 4 Color Guide */
+
+/*
+    Primary  |  Success  |  Info     |  Warning  |  Danger   |  Dark     |  Light
+    #0275d8  |  #5cb85c  |  #5bc0de  |  #f0ad4e  |  #d9534f  |  #292b2c  |  #f7f7f7
+*/
+
+
+/* For DataTables Search Box and length selector */
+
+.dataTables_filter {
+    margin: 0.25rem;
+}
+
+.dataTables_length {
+    margin: 0.25rem;
+}
+
+.paginate_button {
+    margin: 0.25rem 0rem;
+}
+
+.paginate_button:first-of-type {
+    margin-left: 0.25rem;
+}
+
+.paginate_button:last-of-type {
+    margin-right: 0.25rem;
+}

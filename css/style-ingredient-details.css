@@ -1,0 +1,109 @@
+.content {
+    padding: 2em;
+}
+
+.column-container {
+    max-width: 65em;
+    width: 100%;
+    margin: auto;
+}
+
+.column-container>* {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+h4 {
+    color: #333;
+}
+
+h5 {
+    padding-bottom: 0.75em;
+}
+
+h6 {
+    padding-bottom: 1em;
+    color: #555;
+}
+
+.col-lg-6 {
+    padding: 0em 2em;
+}
+
+#action-row {
+    padding-top: 0em;
+}
+
+#action-row>* {
+    margin: 0em 0.05em;
+}
+
+#action-row>*:first-child {
+    margin-left: 0em;
+}
+
+#action-row>*:last-child {
+    margin-right: 0em;
+}
+
+.main-content {
+    margin-top: 2em;
+}
+
+#stats * {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 0.8rem;
+}
+
+#stats>*>*:last-child {
+    font-size: 1.2rem;
+    padding: 0.2rem;
+    color: black;
+    margin-bottom: 0em;
+}
+
+#stat-gram {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: black;
+}
+
+.chart-div {
+    position: relative;
+    max-width: 18em;
+    margin: auto;
+}
+
+.table-main-header {
+    font-weight: bolder;
+    font-size: 2em;
+    text-align: center;
+}
+
+.attr-table {
+    border-radius: 1em;
+    max-width: 450px;
+    width: 40em;
+    overflow: hidden;
+    box-shadow: 0 0 0 0.1em black;
+}
+
+.sub-header {
+    text-align: left;
+    font-weight: 700;
+    font-size: 1.1em;
+    color: black;
+}
+
+.sub-sub-header {
+    font-size: 0.9rem;
+    color: #000;
+    font-weight: 600;
+}
+
+td>* {
+    padding: 0.2em 1em;
+}

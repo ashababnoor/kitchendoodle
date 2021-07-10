@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab:wght@200;400;700;900&display=swap');
+
+/* Landing Page and FAQ */
+
+:root {
+    --clr-primary-900: #009245;
+    --clr-primary-600: #AFD7A9;
+    --clr-bs-primary: #0275d8;
+    --clr-bs-success: #5cb85c;
+    --clr-bs-info: #5bc0de;
+    --clr-bs-warning: #f0ad4e;
+    --clr-bs-danger: #d9534f;
+    --clr-bs-dark: #292b2c;
+    --clr-bs-light: #f7f7f7;
+    --font-roboto-slab: "Roboto Slab", serif;
+    --font-default:
+}
+
+.extra-padding {
+    padding-top: 0.8em;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+}
+
+#nav-text {
+    padding: 0em;
+    font-family: var(--font-roboto-slab);
+    font-weight: 900;
+    font-size: 1.6em;
+    color: var(--clr-primary-900);
+}
+
+.content {
+    padding: 2em;
+}
+
+.card-header h5 button {
+    font-weight: 700;
+}
+
+.flex-columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-columns>* {
+    flex-basis: calc((850px - 100%) * 999);
+    flex-grow: 1;
+    padding: 0em;
+}
+
+.col-a,
+.col-b {
+    padding: 2em;
+}
+
+.col-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-text {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.4em;
+    font-weight: 900;
+    color: var(--clr-bs-success);
+    line-height: 1.3em;
+    /* text-shadow: 0.05rem 0.05rem 0.1rem #aaa; */
+}
+
+strong {
+    color: var(--clr-primary-900);
+    font-size: 1.4em;
+}
+
+.subtitle-text {
+    margin-top: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #666;
+    line-height: 1.4em;
+}
+
+.landing-img {
+    /* width: 100%;
+    max-width: 400px; */
+    max-width: 60vw;
+    width: 100%;
+    height: 55vh;
+}
+
+.main-btn {
+    border-radius: 1em;
+    max-width: 15ch;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    margin-bottom: 0;
+}
+
+
+/* Extras */
+
+.btn-social:focus {
+    background: #777;
+}
+
+.btn a,
+.btn a:hover {
+    color: #eee;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn-purple {
+    background-color: purple;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}

@@ -1,0 +1,10 @@
+.main-container{
+    padding: 2.5em 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+h4{
+    font-weight: bold;
+    color: #777;
+}
