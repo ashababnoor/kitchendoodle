@@ -463,7 +463,7 @@ if(
                     ourRequest.send(addRequest);
 
                     container.innerHTML = `<div class="alert alert-success alert-dismissible fade show" role="alert" id="wish-alert">
-                                                <strong>Hurray!</strong> This recipe has been added to your wishlist!
+                                                <strong>Hurray!</strong> This recipe has been added to your <a href="wishlist.php" class="alert-link">wishlist!</a>
                                                 <button type="button" class="close" id="wish-alert-close" data-dismiss="alert" aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
@@ -475,7 +475,7 @@ if(
                     ourRequest.send(removeRequest);
 
                     container.innerHTML = `<div class="alert alert-warning alert-dismissible fade show" role="alert" id="wish-alert">
-                                                This recipe has been removed from your wishlist.
+                                                This recipe has been removed from your <a href="wishlist.php" class="alert-link"> wishlist. </a>
                                                 <button type="button" class="close" id="wish-alert-close" data-dismiss="alert" aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
