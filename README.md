@@ -17,3 +17,10 @@ KitchenDoodle is a meal-kit delivery service.
 
 #### User Home Page
 # ![KitchenDoodle - User Home](resources/kd-user-home.jpg)
+
+#### Admin Home Page
+# ![KitchenDoodle - Admin Home](resources/kd-admin-home.jpg)
+
+#### Admin Recipe Page
+# ![KitchenDoodle - Admin Recipe Attr.](resources/kd-admin-recipe.jpg)
+
