@@ -12,3 +12,5 @@ KitchenDoodle is a meal-kit delivery service.
 
 <br>
 
+#### About Page
+# ![KitchenDoodle - About](resources/kd-about.jpg)
