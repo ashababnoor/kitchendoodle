@@ -27,5 +27,5 @@ KitchenDoodle is a meal-kit delivery service.
 #### User Food Attributes Page
 # ![KitchenDoodle - User Food Attr.](resources/kd-user-food.jpg)
 
-#### User Food Attributes Page
-# ![KitchenDoodle - User Food Attr.](resources/kd-user-food.jpg)
+#### Admin Food Attributes Page
+# ![KitchenDoodle - User Food Attr.](resources/kd-admin-food.jpg)
