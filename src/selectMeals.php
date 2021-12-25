@@ -124,70 +124,106 @@ if(
                                 <div class="cells weekday">
                                     <div>
                                         <span class="text">
-                                            SUN
+                                            <?php
+                                                $d=strtotime("+0 day"); 
+                                                echo date('D', $d)
+                                            ?>
                                         </span>
                                         <span class="subtext">
-                                            04 Jul
+                                            <?php
+                                                $d=strtotime("+0 day"); 
+                                                echo date('d M', $d)
+                                            ?>
                                         </span>
                                     </div>
                                 </div>
                                 <div class="cells weekday">
                                     <div>
                                         <span class="text">
-                                            MON
+                                            <?php
+                                                $d=strtotime("+1 day"); 
+                                                echo date('D', $d)
+                                            ?>
                                         </span>
                                         <span class="subtext">
-                                           05 Jul
+                                            <?php
+                                                echo date('d M', $d)
+                                            ?>
                                         </span>
                                     </div>
                                 </div>
                                 <div class="cells weekday">
                                     <div>
                                         <span class="text">
-                                            TUE
+                                            <?php
+                                                $d=strtotime("+2 day"); 
+                                                echo date('D', $d)
+                                            ?>
                                         </span>
                                         <span class="subtext">
-                                            06 Jul
+                                            <?php
+                                                echo date('d M', $d)
+                                            ?>
                                         </span>
                                     </div>
                                 </div>
                                 <div class="cells weekday">
                                     <div>
                                         <span class="text">
-                                            WED
+                                            <?php
+                                                $d=strtotime("+3 day"); 
+                                                echo date('D', $d)
+                                            ?>
                                         </span>
                                         <span class="subtext">
-                                            07 Jul
+                                            <?php
+                                                echo date('d M', $d)
+                                            ?>
                                         </span>
                                     </div>
                                 </div>
                                 <div class="cells weekday">
                                     <div>
                                         <span class="text">
-                                            THU
+                                            <?php
+                                                $d=strtotime("+4 day"); 
+                                                echo date('D', $d)
+                                            ?>
                                         </span>
                                         <span class="subtext">
-                                            08 Jul
+                                            <?php
+                                                echo date('d M', $d)
+                                            ?>
                                         </span>
                                     </div>
                                 </div>
                                 <div class="cells weekday">
                                     <div>
                                         <span class="text">
-                                            FRI
+                                            <?php
+                                                $d=strtotime("+5 day"); 
+                                                echo date('D', $d)
+                                            ?>
                                         </span>
                                         <span class="subtext">
-                                            09 Jul
+                                            <?php
+                                                echo date('d M', $d)
+                                            ?>
                                         </span>
                                     </div>
                                 </div>
                                 <div class="cells weekday">
                                     <div>
                                         <span class="text">
-                                            SAT
+                                            <?php
+                                                $d=strtotime("+6 day"); 
+                                                echo date('D', $d)
+                                            ?>
                                         </span>
                                         <span class="subtext">
-                                            10 Jul
+                                            <?php
+                                                echo date('d M', $d)
+                                            ?>
                                         </span>
                                     </div>
                                 </div>
@@ -238,17 +274,20 @@ if(
                             </div>
                         </div>
                     </div>
+                    <form action="selectedMealsProcess.php" method="post">
+                        <input type="hidden" id="mealdata" name='mealdata' value="">
 
-                    <div class="d-flex justify-content-between" style="margin-top: 2em;">
-                        <button id="savedraft" class="btn btn-info" onclick=""> Save as Draft &nbsp;<i class='fas fa-file-alt'></i> </button>
-                        <button id="checkout" class="btn btn-success" onclick=""> Proceed to Checkout &nbsp;<i class='fas fa-dollar-sign'></i> </button>
-                    </div>
+                        <div class="d-flex justify-content-between" style="margin-top: 2em;">
+                            <button id="savedraft" class="btn btn-info" onclick=""> Save as Draft &nbsp;<i class='fas fa-file-alt'></i> </button>
+                            <button id="checkout" class="btn btn-success" type="submit"> Proceed to Checkout &nbsp;<i class='fas fa-dollar-sign'></i> </button>
+                        </div>
+                    </form>
                 </div>
            </div>
         </div>
 
 
-        <!-- Modal For Updating Preference -->
+        <!-- Modal For Selecting Meal -->
             
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -448,12 +487,31 @@ if(
 
                 selectedMeals[day_time] = meal;
                 console.log(selectedMeals);
+
+
+                let selectedMealsString = JSON.stringify(selectedMeals);
+                console.log(selectedMealsString);
+
+                let hiddenMealInput = document.getElementById('mealdata');
+                hiddenMealInput.value = selectedMealsString;
             }
 
             function removeMeal(day_time){
                 delete selectedMeals[day_time];
                 console.log(selectedMeals);
+
+                let selectedMealsString = JSON.stringify(selectedMeals);
+                console.log(selectedMealsString);
+
+                let hiddenMealInput = document.getElementById('mealdata');
+                hiddenMealInput.value = selectedMealsString;
             }
+
+            let checkoutBtn = document.getElementById('checkout');
+
+            // checkoutBtn.addEventListener('click', function(){
+            //     location.assign('selectedMealsProcess.php');
+            // })
         </script>
 
     </body>
